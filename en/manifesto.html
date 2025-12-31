@@ -1,272 +1,242 @@
 ---
 layout: default
-title: Manifesto
+title: The Manifesto - HIT Model
 lang: en
 locale: en_US
 permalink: /en/manifesto/
+description: "The 10 Laws of Hybrid Intelligence. The moral and operating code for the future of work."
 ---
 
-<!-- Hero Section -->
+<!-- Hero Section: The Construct (Conceptual) -->
 <div class="mb-20 rounded-[3rem] overflow-hidden">
-    <section class="relative py-32 px-6 overflow-hidden bg-white dark:bg-neutral-950">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div class="relative z-10">
+    <section class="relative min-h-[80vh] flex items-center pt-32 pb-20 overflow-hidden bg-black text-white">
+        <!-- Background Grid -->
+        <div class="absolute inset-0 bg-[url('/assets/grid.svg')] opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-8 lg:px-12 w-full relative z-10">
+            <!-- Left: Text -->
+            <div class="reveal active">
                 <div
-                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-blue/10 dark:bg-brand-blue/20 text-brand-blue dark:text-blue-400 text-xs font-bold tracking-wide uppercase mb-8">
-                    <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-                    Identity Protocol
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-xs font-bold tracking-wide uppercase mb-6 border border-white/20">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    Version 1.0
                 </div>
-                <h1 class="text-6xl lg:text-8xl font-black tracking-tighter leading-[1.0] mb-8">
-                    Humans <br>
-                    <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-purple">Amplified.</span>
+                <h1 class="text-6xl lg:text-8xl font-serif font-medium tracking-tight mb-8 leading-none">
+                    The Genetic <br>
+                    <span class="italic text-gray-400">Code.</span>
                 </h1>
-                <p class="text-2xl text-gray-500 dark:text-gray-400 mb-10 max-w-lg leading-relaxed font-light">
-                    The future belongs not to AI replacing humans, but to humans directing AI as an extension of their
-                    own intelligence.
+                <p class="text-xl text-gray-400 mb-10 max-w-lg leading-relaxed font-light">
+                    We aren't writing software. We are rewriting the social contract between human and machine.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#leads"
-                        class="px-8 py-4 rounded-full bg-gray-100 dark:bg-white/10 text-black dark:text-white font-bold hover:bg-gray-200 transition-all">Read
-                        The 10 Laws</a>
-                </div>
+                <a href="#laws"
+                    class="inline-flex items-center gap-3 text-white font-bold border-b border-white pb-1 hover:opacity-70 transition-opacity">
+                    Read the 10 Laws
+                    <i class="fas fa-arrow-down transform group-hover:translate-y-1 transition-transform"></i>
+                </a>
             </div>
-            <div class="relative h-[400px] flex items-center justify-center select-none pointer-events-none">
-                <!-- Abstract Visual -->
+
+            <!-- Right: The Construct Visual -->
+            <div class="relative h-[600px] flex items-center justify-center">
+                <!-- Central Pillar -->
                 <div
-                    class="w-96 h-96 bg-brand-blue/5 dark:bg-brand-blue/10 rounded-full blur-3xl absolute animate-pulse">
+                    class="relative w-24 h-[500px] bg-white/5 rounded-full backdrop-blur-md border border-white/10 overflow-hidden flex flex-col justify-between items-center py-8 shadow-2xl">
+                    <div
+                        class="w-1 h-full bg-gradient-to-b from-transparent via-brand-blue to-transparent opacity-50 absolute left-1/2 -translate-x-1/2">
+                    </div>
+
+                    <!-- Nodes -->
+                    <div class="w-4 h-4 rounded-full bg-white shadow-[0_0_15px_white] z-10 animate-ping"></div>
+                    <div class="w-3 h-3 rounded-full bg-white/50 z-10"></div>
+                    <div class="w-3 h-3 rounded-full bg-white/50 z-10"></div>
+                    <div class="w-4 h-4 rounded-full bg-brand-blue shadow-[0_0_15px_#3b82f6] z-10"></div>
                 </div>
-                <img src="/assets/images/logo/hit-logo-icon-only.png" class="w-64 h-auto relative z-10 opacity-80"
-                    alt="HIT Monolith">
+
+                <!-- Orbiting Rings (CSS Animation) -->
+                <div
+                    class="absolute w-[400px] h-[400px] border border-white/10 rounded-full animate-[spin_10s_linear_infinite]">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-gray-800 rounded-full border border-white/50">
+                    </div>
+                </div>
+                <div
+                    class="absolute w-[600px] h-[600px] border border-white/5 rounded-full animate-[spin_15s_linear_infinite_reverse]">
+                    <div
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-6 h-6 bg-brand-blue/20 rounded-full backdrop-blur-md">
+                    </div>
+                </div>
+
+                <!-- Floating Cards -->
+                <div
+                    class="absolute top-1/4 -right-10 bg-white/10 backdrop-blur-xl p-4 rounded-xl border border-white/10 w-48 animate-float">
+                    <div class="text-[10px] uppercase tracking-widest text-gray-400 mb-1">Principle I</div>
+                    <div class="text-sm font-bold">Human Leads.</div>
+                </div>
+                <div
+                    class="absolute bottom-1/4 -left-10 bg-white/10 backdrop-blur-xl p-4 rounded-xl border border-white/10 w-48 animate-float-delayed">
+                    <div class="text-[10px] uppercase tracking-widest text-gray-400 mb-1">Principle X</div>
+                    <div class="text-sm font-bold">Agent Executes.</div>
+                </div>
             </div>
         </div>
     </section>
 </div>
 
-<!-- Core Tenets (High Level) -->
-<div class="mb-20 border border-gray-200 dark:border-white/10 rounded-[3rem] overflow-hidden">
+<div id="laws"></div>
+
+<!-- The 10 Laws Section -->
+<div class="mb-20 rounded-[3rem] overflow-hidden">
     <div
         class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
-        First Principles
+        The HIT Constitution
     </div>
-    <div class="p-10 bg-brand-surface dark:bg-neutral-900">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div
-                class="bg-white dark:bg-neutral-800 p-10 rounded-[2.5rem] shadow-sm hover:-translate-y-2 transition-transform duration-500">
-                <div
-                    class="w-16 h-16 bg-black dark:bg-white text-white dark:text-black rounded-2xl flex items-center justify-center text-3xl font-black mb-6">
-                    1
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Zero Trust, Total Control.</h3>
-                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
-                    Your data never leaves the perimeter. We do not train models on your secrets. The infrastructure is
-                    yours, the control is absolute.
+    <section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900 border-b border-gray-200 dark:border-white/10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6">The 10 Laws.</h2>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">
+                    These aren't suggestions. They are the necessary conditions for survival in the age of Artificial
+                    Agency.
                 </p>
             </div>
+
+            <div class="space-y-4">
+                <!-- Law I -->
+                <div
+                    class="group relative bg-white dark:bg-black rounded-3xl p-8 lg:p-12 border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-colors">
+                    <div
+                        class="absolute -left-4 -top-4 w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center font-bold text-xl shadow-xl">
+                        I</div>
+                    <h3 class="text-2xl font-bold mb-4">AI is not a Tool. It is Labor.</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                        Stop treating AI like a calculator. Treat it like a deaf, indefatigable employee. If you don't
+                        give it a job title, a description, and KPIs, it will fail.
+                    </p>
+                    <div class="flex gap-4 text-sm">
+                        <span class="text-red-500"><i class="fas fa-times mr-2"></i> "Use ChatGPT to write"</span>
+                        <span class="text-green-500"><i class="fas fa-check mr-2"></i> "Hire a Content Agent"</span>
+                    </div>
+                </div>
+
+                <!-- Law II -->
+                <div
+                    class="group relative bg-white dark:bg-black rounded-3xl p-8 lg:p-12 border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-colors">
+                    <div
+                        class="absolute -left-4 -top-4 w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center font-bold text-xl shadow-xl">
+                        II</div>
+                    <h3 class="text-2xl font-bold mb-4">No Responsibility without Control.</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                        An agent cannot own a P&L. The human ("Domain Lead") is always responsible for the agent's
+                        output. Agents scale execution, not blame.
+                    </p>
+                </div>
+
+                <!-- Law III -->
+                <div
+                    class="group relative bg-white dark:bg-black rounded-3xl p-8 lg:p-12 border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-colors">
+                    <div
+                        class="absolute -left-4 -top-4 w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center font-bold text-xl shadow-xl">
+                        III</div>
+                    <h3 class="text-2xl font-bold mb-4">Data is Fuel, Process is the Engine.</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                        A powerful AI model on poor data is useless. A mediocre model on excellent data is magic. Clean
+                        the pipes before flowing the water.
+                    </p>
+                </div>
+
+                <!-- Law IV -->
+                <div
+                    class="group relative bg-white dark:bg-black rounded-3xl p-8 lg:p-12 border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-colors">
+                    <div
+                        class="absolute -left-4 -top-4 w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center font-bold text-xl shadow-xl">
+                        IV</div>
+                    <h3 class="text-2xl font-bold mb-4">Hybrid > Pure.</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                        100% automation is fragile. 100% human is slow. The resilient system is 80% machine (speed) and
+                        20% human (judgment and exceptions).
+                    </p>
+                </div>
+
+                <!-- Law V -->
+                <div
+                    class="group relative bg-white dark:bg-black rounded-3xl p-8 lg:p-12 border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-colors">
+                    <div
+                        class="absolute -left-4 -top-4 w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center font-bold text-xl shadow-xl">
+                        V</div>
+                    <h3 class="text-2xl font-bold mb-4">Codify Tribal Knowledge.</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                        What exists in Mario's head must become a Python script. If a process depends on undocumented
+                        intuition, it is not scalable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Placeholder for Laws VI-X -->
             <div
-                class="bg-white dark:bg-neutral-800 p-10 rounded-[2.5rem] shadow-sm hover:-translate-y-2 transition-transform duration-500">
-                <div
-                    class="w-16 h-16 bg-brand-blue text-white rounded-2xl flex items-center justify-center text-3xl font-black mb-6">
-                    2
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Hybrid Intelligence.</h3>
-                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
-                    AI is not a magic oracle, it's a kinetic engine. You provide the direction, the system provides the
-                    scale.
-                </p>
-            </div>
-            <div
-                class="bg-white dark:bg-neutral-800 p-10 rounded-[2.5rem] shadow-sm hover:-translate-y-2 transition-transform duration-500">
-                <div
-                    class="w-16 h-16 bg-white dark:bg-black border-2 border-black dark:border-white text-black dark:text-white rounded-2xl flex items-center justify-center text-3xl font-black mb-6">
-                    3
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Stateless by Design.</h3>
-                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
-                    We build systems that don't accumulate technical debt. Every component is modular, replaceable, and
-                    designed to evolve.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Evolution Timeline (Visual Block) -->
-<section class="py-24 px-6 bg-black text-white rounded-[3rem] mb-20 overflow-hidden relative">
-    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-blue/10 to-transparent"></div>
-    <div class="max-w-7xl mx-auto relative z-10">
-        <h2 class="text-4xl md:text-6xl font-black mb-20 text-center">The Evolution of the Organizational Species.</h2>
-
-        <div class="relative border-l-2 border-white/20 ml-4 md:ml-1/2 space-y-20">
-            <!-- Era 1 -->
-            <div class="relative pl-12 md:pl-0">
-                <div class="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-gray-500 border-4 border-black"></div>
-                <div class="md:w-1/2 md:pr-16 md:text-right md:absolute md:left-0">
-                    <span class="text-gray-500 font-bold uppercase tracking-widest text-sm">2010 - 2022</span>
-                    <h3 class="text-3xl font-bold mt-2 text-gray-400">The Tool User</h3>
-                    <p class="mt-4 text-gray-500 max-w-sm ml-auto">
-                        Humans use software. Software is passive. Efficiency is limited by human input speed (typing
-                        speed).
-                    </p>
-                </div>
+                class="mt-8 text-center p-8 border-2 border-dashed border-gray-200 dark:border-white/10 rounded-3xl text-gray-400">
+                <p>Laws VI - X [Classified: Partner Access Only]</p>
             </div>
 
-            <!-- Era 2 -->
-            <div class="relative pl-12 md:pl-0">
-                <div
-                    class="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-brand-blue border-4 border-black animate-pulse">
-                </div>
-                <div class="md:w-1/2 md:ml-auto md:pl-16">
-                    <span class="text-brand-blue font-bold uppercase tracking-widest text-sm">2024 - Present (HIT
-                        Model)</span>
-                    <h3 class="text-3xl font-bold mt-2 text-white">The Hybrid Conductor</h3>
-                    <p class="mt-4 text-gray-300 max-w-sm">
-                        Humans direct the orchestra. Software (Agents) is active and semi-autonomous. Efficiency scales
-                        exponentially.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Era 3 -->
-            <div class="relative pl-12 md:pl-0">
-                <div class="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-black"></div>
-                <div class="md:w-1/2 md:pr-16 md:text-right md:absolute md:left-0 opacity-50">
-                    <span class="text-white font-bold uppercase tracking-widest text-sm">2030+ (Future)</span>
-                    <h3 class="text-3xl font-bold mt-2">Autonomous Enterprise</h3>
-                    <p class="mt-4 text-gray-500 max-w-sm ml-auto">
-                        The organization optimizes itself. Humans define only the Purpose and ethical constraints.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- The 10 Laws (Detailed Content) -->
-<div id="leads"
-    class="mb-20 rounded-[3rem] overflow-hidden bg-white dark:bg-neutral-950 border border-gray-100 dark:border-white/5">
-    <div class="p-10 lg:p-20">
-        <div class="text-center mb-20">
-            <h2 class="text-5xl lg:text-7xl font-black mb-6">The 10 Laws.</h2>
-            <p class="text-xl text-gray-500 max-w-2xl mx-auto">
-                This is not a user manual. It is the genetic code of HIT organizations.
-            </p>
-        </div>
-
-        <div class="space-y-16 max-w-5xl mx-auto">
-            <!-- Law 1 -->
-            <div class="flex flex-col md:flex-row gap-8 border-b border-gray-100 dark:border-white/5 pb-16">
-                <div class="text-6xl font-black text-brand-blue/20 md:w-24">I</div>
-                <div>
-                    <h3 class="text-3xl font-bold mb-4">Law of Symbiosis</h3>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        <strong>Humans direct, AI executes.</strong> Never the reverse. AI must never set strategic
-                        goals without human supervision. Humans must never perform repetitive tasks that can be
-                        algorithimicized.
-                    </p>
-                    <p class="text-sm font-mono text-gray-400">Violation: Human Burnout or Strategic Hallucination.</p>
-                </div>
-            </div>
-
-            <!-- Law 2 -->
-            <div class="flex flex-col md:flex-row gap-8 border-b border-gray-100 dark:border-white/5 pb-16">
-                <div class="text-6xl font-black text-brand-blue/20 md:w-24">II</div>
-                <div>
-                    <h3 class="text-3xl font-bold mb-4">Law of Sovereignty</h3>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        <strong>Data is your blood. Don't donate it.</strong> Organizational knowledge must reside on
-                        infrastructure controlled by the company, encrypted and isolated from public models.
-                    </p>
-                    <p class="text-sm font-mono text-gray-400">Violation: Vendor Lock-in, Data Leakage.</p>
-                </div>
-            </div>
-
-            <!-- Law 3 -->
-            <div class="flex flex-col md:flex-row gap-8 border-b border-gray-100 dark:border-white/5 pb-16">
-                <div class="text-6xl font-black text-brand-blue/20 md:w-24">III</div>
-                <div>
-                    <h3 class="text-3xl font-bold mb-4">Law of Codification</h3>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        <strong>If it's not code, it's opinion.</strong> Every operational process must be transformed
-                        into executable workflows (n8n, Python). "Tribal knowledge" is the enemy of scale.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Law 4 -->
-            <div class="flex flex-col md:flex-row gap-8 border-b border-gray-100 dark:border-white/5 pb-16">
-                <div class="text-6xl font-black text-brand-blue/20 md:w-24">IV</div>
-                <div>
-                    <h3 class="text-3xl font-bold mb-4">Law of Asynchronous Speed</h3>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        <strong>Work doesn't wait for meetings.</strong> Agents work 24/7. Humans interact when
-                        necessary. The system must be designed to be asynchronous by default.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Law 5 -->
-            <div class="flex flex-col md:flex-row gap-8 border-b border-gray-100 dark:border-white/5 pb-16">
-                <div class="text-6xl font-black text-brand-blue/20 md:w-24">V</div>
-                <div>
-                    <h3 class="text-3xl font-bold mb-4">Law of Radical Transparency</h3>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        <strong>Every AI action must be logged.</strong> A "Black Box" is not admissible in business. We
-                        must always be able to answer the question: "Why did the Agent do this?".
-                    </p>
-                </div>
-            </div>
-
-            <!-- Placeholder for 6-10 to save space visually but implies completeness -->
-            <div class="text-center py-10 opacity-50">
-                <div class="text-xl font-bold mb-2">[...]</div>
-                <p>Laws VI - X are reserved for HIT Certified members.</p>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Statement Section -->
-<section class="mb-20 reveal">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-12 leading-tight">
-            We are not "adopting" AI.<br>
-            We are <span
-                class="bg-black dark:bg-white text-white dark:text-black px-4 transform -skew-x-6 inline-block">forging</span>
-            a new species of company.
-        </h2>
-        <div class="space-y-8 text-xl text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-2xl mx-auto">
-            <p>
-                The traditional "SaaS" (Software as a Service) model is obsolete. It rents you tools, but owns your
-                operational intelligence. It locks you into closed silos and endless monthly fees.
-            </p>
-            <p>
-                Welcome to the era of Hybrid Teams. Where every member has a digital army at their command.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Call to Action -->
-<div class="mb-20 border border-gray-200 dark:border-white/10 rounded-[3rem] overflow-hidden">
-    <section class="relative py-20 px-6 bg-brand-blue overflow-hidden">
-        <div class="max-w-4xl mx-auto text-center relative z-10 text-white">
-            <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter">Enter the Protocol.</h2>
-            <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-                The Whitepaper is your map to digital sovereignty. Study it. Adapt it. Execute.
-            </p>
-            <a href="/en/whitepaper/"
-                class="inline-block px-10 py-5 rounded-full bg-white text-brand-blue font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
-                Access the Whitepaper
-            </a>
-        </div>
-        <!-- Decorative Circles -->
-        <div
-            class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
-        </div>
-        <div
-            class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2">
         </div>
     </section>
+</div>
+
+<!-- Evolution Timeline Section -->
+<div class="mb-20 rounded-[3rem] overflow-hidden bg-black text-white">
+    <div class="bg-white/10 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-white/10">
+        Future History
+    </div>
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6">Evolution of the (Working) Species.</h2>
+            </div>
+
+            <div class="relative border-l border-white/20 ml-6 md:ml-12 space-y-16">
+                <!-- Era 1 -->
+                <div class="relative pl-12">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-500"></div>
+                    <div class="text-sm font-mono text-gray-500 mb-2">1990 - 2022</div>
+                    <h3 class="text-2xl font-bold mb-2">The Tool User</h3>
+                    <p class="text-gray-400 max-w-xl">
+                        Humans use software. Excel, Salesforce, Slack. Humans are the "glue" moving data between
+                        windows.
+                    </p>
+                </div>
+
+                <!-- Era 2 (Current) -->
+                <div class="relative pl-12">
+                    <div
+                        class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-brand-blue shadow-[0_0_15px_#3b82f6]">
+                    </div>
+                    <div class="text-sm font-mono text-brand-blue mb-2">2023 - 2025</div>
+                    <h3 class="text-2xl font-bold mb-2">The Hybrid Conductor</h3>
+                    <p class="text-gray-300 max-w-xl">
+                        Humans direct agents. Define the goal, agent does the dirty work. Humans intervene only on
+                        exceptions. **(We are here)**
+                    </p>
+                </div>
+
+                <!-- Era 3 -->
+                <div class="relative pl-12 opacity-50">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white"></div>
+                    <div class="text-sm font-mono text-gray-500 mb-2">2026+</div>
+                    <h3 class="text-2xl font-bold mb-2">The Autonomous Enterprise</h3>
+                    <p class="text-gray-400 max-w-xl">
+                        Agents coordinate with agents. The organization optimizes itself. Humans focus only on "Purpose"
+                        and "Ethics".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CTA -->
+<div class="text-center py-20">
+    <h2 class="text-4xl font-black mb-8">Ready to break the status quo?</h2>
+    <a href="/en/whitepaper/"
+        class="px-10 py-5 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold text-xl hover:scale-105 transition-transform">
+        Begin Transition
+    </a>
 </div>
