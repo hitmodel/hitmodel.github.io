@@ -41,443 +41,448 @@ description: "The Operating Model for AI-Native Organizations. Don't just use AI
                 </div>
             </div>
 
-            <!-- Visual Hero: Command Center -->
-            <div class="relative h-[600px] w-full flex items-center justify-center lg:justify-end">
-                <!-- Abstract Glow -->
+            <!-- Visual Hero: Enterprise Dashboard -->
+            <div class="relative h-[600px] w-full flex items-center justify-center lg:justify-end perspective-1000">
+                <!-- Ambient Glow -->
                 <div
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-brand-blue/20 to-purple-600/20 rounded-full blur-[120px] animate-pulse">
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-blue/20 rounded-full blur-[120px] opacity-40 animate-pulse">
                 </div>
 
-                <!-- Main Interface Container -->
+                <!-- Dashboard Container -->
                 <div
-                    class="relative z-10 w-full max-w-lg bg-[#0f172a]/90 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-500">
-                    <!-- Terminal Header -->
-                    <div class="flex items-center gap-2 px-4 py-3 bg-white/5 border-b border-white/5">
-                        <div class="flex gap-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    class="relative z-10 w-full max-w-xl bg-white/40 dark:bg-neutral-900/40 backdrop-blur-2xl border border-white/20 dark:border-white/10 rounded-3xl shadow-2xl overflow-hidden transform rotate-y-[-5deg] hover:rotate-y-0 transition-all duration-700 ease-out">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-white/5">
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
+                            <span
+                                class="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">System
+                                Status: Nominal</span>
                         </div>
-                        <div class="ml-4 text-xs font-mono text-gray-500">agent_runtime.py — h-top</div>
+                        <i class="fas fa-ellipsis-h text-gray-400"></i>
                     </div>
 
-                    <!-- Terminal Content -->
-                    <div class="p-6 font-mono text-sm space-y-4">
-                        <div class="flex items-center gap-3 border-b border-white/5 pb-4">
-                            <div
-                                class="w-10 h-10 rounded bg-blue-500/20 flex items-center justify-center text-blue-400">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div>
-                                <div class="text-white font-bold">Sales_Agent_01</div>
-                                <div class="text-xs text-green-400">● Active - Idling</div>
-                            </div>
-                            <div class="ml-auto text-xs text-gray-500">CPU: 12%</div>
+                    <!-- Main Metrics -->
+                    <div class="p-8 grid grid-cols-2 gap-6">
+                        <!-- Metric 1 -->
+                        <div class="p-4 rounded-2xl bg-white/50 dark:bg-black/20 border border-white/10">
+                            <div class="text-sm text-gray-500 mb-1">Active Agents</div>
+                            <div class="text-4xl font-black text-gray-900 dark:text-white">14</div>
+                            <div class="text-xs text-green-600 mt-2 font-bold">▲ +2 deployed today</div>
                         </div>
-
-                        <!-- Logs -->
-                        <div class="space-y-2 text-xs">
-                            <div class="flex gap-2">
-                                <span class="text-gray-500">[10:42:01]</span>
-                                <span class="text-blue-400">INFO</span>
-                                <span class="text-gray-300">Scanning CRM (Salesforce) for new leads...</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <span class="text-gray-500">[10:42:05]</span>
-                                <span class="text-blue-400">INFO</span>
-                                <span class="text-gray-300">Found 3 high-value prospects.</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <span class="text-gray-500">[10:42:08]</span>
-                                <span class="text-purple-400">ACTION</span>
-                                <span class="text-gray-300">Enriching data via Clearbit API...</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <span class="text-gray-500">[10:42:15]</span>
-                                <span class="text-yellow-400">WAIT</span>
-                                <span class="text-white font-bold bg-white/10 px-1 rounded">Requesting Human Approval
-                                    for Outreach</span>
-                            </div>
+                        <!-- Metric 2 -->
+                        <div class="p-4 rounded-2xl bg-white/50 dark:bg-black/20 border border-white/10">
+                            <div class="text-sm text-gray-500 mb-1">Tasks Automated</div>
+                            <div class="text-4xl font-black text-brand-blue">8,402</div>
+                            <div class="text-xs text-gray-400 mt-2">Last 24 hours</div>
                         </div>
+                    </div>
 
-                        <!-- Input Area -->
-                        <div class="mt-6 pt-4 border-t border-white/5 flex gap-2 items-center">
-                            <span class="text-green-500">➜</span>
-                            <span class="text-gray-500">human_operator:</span>
-                            <span class="text-white">approve_all --execute</span>
-                            <span class="w-2 h-4 bg-white animate-pulse"></span>
+                    <!-- Activity Feed (Graph Simulation) -->
+                    <div class="px-8 pb-8">
+                        <div class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Efficiency Delta
+                        </div>
+                        <div class="h-24 flex items-end justify-between gap-1">
+                            <div class="w-full bg-brand-blue/20 rounded-t-sm h-[40%]"></div>
+                            <div class="w-full bg-brand-blue/30 rounded-t-sm h-[55%]"></div>
+                            <div class="w-full bg-brand-blue/40 rounded-t-sm h-[45%]"></div>
+                            <div class="w-full bg-brand-blue/50 rounded-t-sm h-[70%]"></div>
+                            <div class="w-full bg-brand-blue/60 rounded-t-sm h-[60%]"></div>
+                            <div class="w-full bg-brand-blue/80 rounded-t-sm h-[85%]"></div>
+                            <div class="w-full bg-brand-blue rounded-t-sm h-[95%] relative group">
+                                <div
+                                    class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                                    Record</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Floating Badge -->
+                <!-- Floating Notification Cards (Parallax) -->
                 <div
-                    class="absolute -bottom-6 -left-6 z-20 bg-white dark:bg-brand-blue text-black dark:text-white px-6 py-4 rounded-xl shadow-xl border border-white/20 animate-bounce hidden md:block">
-                    <div class="text-xs font-bold uppercase tracking-wider opacity-70 mb-1">Weekly Time Saved</div>
-                    <div class="text-2xl font-black">42h 15m</div>
+                    class="absolute -right-4 top-20 z-20 bg-white dark:bg-neutral-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-white/5 animate-float delay-100">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-xs">
+                            <i class="fas fa-magic"></i></div>
+                        <div>
+                            <div class="text-xs font-bold">Lead Qualified</div>
+                            <div class="text-[10px] text-gray-400">Sales_Bot_04 just now</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute -left-8 bottom-32 z-20 bg-white dark:bg-neutral-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-white/5 animate-float-delayed">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">
+                            <i class="fas fa-check"></i></div>
+                        <div>
+                            <div class="text-xs font-bold">Invoice Paid</div>
+                            <div class="text-[10px] text-gray-400">Finance_Core · 2m ago</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+</div>
 
-            <!-- Majestic Comparison (SaaS vs HIT) -->
-            <div class="mb-20 rounded-[3rem] overflow-hidden">
-                <div
-                    class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
-                    Paradigm Shift
-                </div>
-                <section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900/50">
-                    <div class="max-w-7xl mx-auto">
-                        <div class="text-center mb-16">
-                            <h2 class="text-4xl lg:text-5xl font-black mb-6">Why Traditional Teams Fail.</h2>
-                            <p class="text-xl text-gray-500 max-w-3xl mx-auto">
-                                Adding AI to broken processes only makes them break faster. You need a new architecture.
-                            </p>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
-                            <!-- Risky -->
-                            <div
-                                class="relative p-10 rounded-3xl border-2 border-dashed border-red-200 dark:border-red-900/30 bg-white/50 dark:bg-black/20 backdrop-blur-sm">
-                                <div class="flex items-center gap-4 mb-8">
-                                    <div
-                                        class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-2xl">
-                                        🚫
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-400">The Corporate "Silo"
-                                    </h3>
-                                </div>
-                                <ul class="space-y-6">
-                                    <li class="flex items-start gap-4"><i class="fas fa-times text-red-500 mt-1"></i>
-                                        <strong class="block text-lg">Human Bottlenecks</strong>Decisions wait for
-                                        approval from
-                                        overloaded managers.</li>
-                                    <li class="flex items-start gap-4"><i class="fas fa-times text-red-500 mt-1"></i>
-                                        <strong class="block text-lg">AI as a "Tool"</strong>Using ChatGPT sporadically
-                                        creates no
-                                        structural competitive advantage.</li>
-                                    <li class="flex items-start gap-4"><i class="fas fa-times text-red-500 mt-1"></i>
-                                        <strong class="block text-lg">Scattered Data</strong>Tribal knowledge locked in
-                                        people's heads
-                                        or private chats.</li>
-                                </ul>
-                            </div>
-                            <!-- Kinetic -->
-                            <div
-                                class="relative p-10 rounded-3xl border border-brand-green/30 bg-white dark:bg-[#0a0a0a] shadow-2xl">
-                                <div
-                                    class="absolute -top-4 -right-4 bg-brand-green text-black text-xs font-bold px-3 py-1 rounded-full uppercase">
-                                    Recommended</div>
-                                <div class="flex items-center gap-4 mb-8">
-                                    <div
-                                        class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-2xl">
-                                        ⚡</div>
-                                    <h3 class="text-2xl font-bold text-brand-primary">The HIT Model</h3>
-                                </div>
-                                <ul class="space-y-6">
-                                    <li class="flex items-start gap-4"><i
-                                            class="fas fa-check text-brand-green mt-1"></i> <strong
-                                            class="block text-lg">Scalable Intelligence</strong>Autonomous agents handle
-                                        execution,
-                                        humans handle strategy.</li>
-                                    <li class="flex items-start gap-4"><i
-                                            class="fas fa-check text-brand-green mt-1"></i> <strong
-                                            class="block text-lg">Codified Knowledge</strong>Best processes are turned
-                                        into code,
-                                        not forgotten PDFs.</li>
-                                    <li class="flex items-start gap-4"><i
-                                            class="fas fa-check text-brand-green mt-1"></i> <strong
-                                            class="block text-lg">24/7 Execution</strong>While the team sleeps, the
-                                        system preps
-                                        work for the next day.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<!-- Majestic Comparison (SaaS vs HIT) -->
+<div class="mb-20 rounded-[3rem] overflow-hidden">
+    <div
+        class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
+        Paradigm Shift
+    </div>
+    <section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6">Why Traditional Teams Fail.</h2>
+                <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+                    Adding AI to broken processes only makes them break faster. You need a new architecture.
+                </p>
             </div>
-
-            <!-- Process Steps Visuals -->
-            <div class="mb-20 rounded-[3rem] overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
+                <!-- Risky -->
                 <div
-                    class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
-                    How It Works
-                </div>
-                <section
-                    class="py-20 px-6 bg-brand-surface dark:bg-neutral-900 border-b border-gray-200 dark:border-white/10">
-                    <div class="max-w-5xl mx-auto space-y-20">
-                        <!-- Step 1 -->
-                        <div class="grid lg:grid-cols-2 gap-12 items-center">
-                            <div class="lg:text-right">
-                                <div class="text-6xl font-black opacity-20 mb-2">01</div>
-                                <h3 class="text-3xl font-bold mb-4">Protocol Design</h3>
-                                <p class="text-lg text-gray-500 dark:text-gray-400">We don't automate chaos. First, we
-                                    map decision
-                                    flows and identify where AI can act as an autonomous agent, not just an assistant.
-                                </p>
-                            </div>
-                            <div
-                                class="bg-[#1e1e1e] rounded-2xl border border-white/10 shadow-2xl p-6 font-mono text-sm overflow-hidden text-left">
-                                <div class="text-green-400 mb-2">> Mapping workflow: "Customer Onboarding"</div>
-                                <div class="text-blue-400 mt-2">Identified Nodes: 5</div>
-                                <div class="text-gray-400 pl-4">- Email Ingestion (Automated)</div>
-                                <div class="text-gray-400 pl-4">- CRM Entry (Automated)</div>
-                                <div class="text-white pl-4">- Risk Assessment (Agentic AI)</div>
-                            </div>
+                    class="relative p-10 rounded-3xl border-2 border-dashed border-red-200 dark:border-red-900/30 bg-white/50 dark:bg-black/20 backdrop-blur-sm">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-2xl">
+                            🚫
                         </div>
-                        <!-- Step 2 -->
-                        <div class="grid lg:grid-cols-2 gap-12 items-center">
-                            <div
-                                class="bg-[#0f172a] rounded-2xl border border-white/10 shadow-2xl p-6 font-mono text-xs overflow-hidden text-left order-2 lg:order-1">
-                                <div class="flex gap-2"><span class="text-blue-400">INFO</span><span
-                                        class="text-gray-300">Agent
-                                        "SalesBot" active.</span></div>
-                                <div class="flex gap-2 bg-white/5 p-2 rounded mt-2"><span
-                                        class="text-green-400">DECISION:</span>
-                                    <span class="text-gray-300">Lead Score > 80. Scheduling call.</span>
-                                </div>
-                            </div>
-                            <div class="order-1 lg:order-2">
-                                <div class="text-6xl font-black opacity-20 mb-2">02</div>
-                                <h3 class="text-3xl font-bold mb-4">Agent Deployment</h3>
-                                <p class="text-lg text-gray-500 dark:text-gray-400">We install proprietary Docker
-                                    containers on your
-                                    servers. Your agents live in your house, work on your data, and answer only to you.
-                                </p>
-                            </div>
-                        </div>
+                        <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-400">The Corporate "Silo"
+                        </h3>
                     </div>
-                </section>
-            </div>
-
-            <!-- Use Cases (New Section) -->
-            <div class="mb-20 rounded-[3rem] overflow-hidden">
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4"><i class="fas fa-times text-red-500 mt-1"></i>
+                            <strong class="block text-lg">Human Bottlenecks</strong>Decisions wait for
+                            approval from
+                            overloaded managers.
+                        </li>
+                        <li class="flex items-start gap-4"><i class="fas fa-times text-red-500 mt-1"></i>
+                            <strong class="block text-lg">AI as a "Tool"</strong>Using ChatGPT sporadically
+                            creates no
+                            structural competitive advantage.
+                        </li>
+                        <li class="flex items-start gap-4"><i class="fas fa-times text-red-500 mt-1"></i>
+                            <strong class="block text-lg">Scattered Data</strong>Tribal knowledge locked in
+                            people's heads
+                            or private chats.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Kinetic -->
                 <div
-                    class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
-                    Real World Applications
-                </div>
-                <section class="py-24 px-6 bg-white dark:bg-neutral-950">
-                    <div class="max-w-7xl mx-auto">
-                        <div class="text-center mb-16">
-                            <h2 class="text-4xl lg:text-5xl font-black mb-6">From Theory to Practice.</h2>
-                            <p class="text-xl text-gray-500 max-w-3xl mx-auto">
-                                Where the HIT Model generates immediate value.
-                            </p>
-                        </div>
-                        <div class="grid md:grid-cols-3 gap-8">
-                            <!-- Case 1: Sales -->
-                            <div
-                                class="group relative p-8 rounded-3xl border border-gray-100 dark:border-white/10 hover:border-brand-blue/50 transition-colors">
-                                <div
-                                    class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
-                                </div>
-                                <div class="relative z-10">
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-6">
-                                        <i class="fas fa-bullseye"></i>
-                                    </div>
-                                    <h3 class="text-xl font-bold mb-3">Autonomous Sales Rep</h3>
-                                    <p class="text-gray-500 dark:text-gray-400 mb-4">
-                                        The agent monitors LinkedIn, enriches leads with Clearbit, qualifies the
-                                        contact, and drafts
-                                        personalized cold emails.
-                                    </p>
-                                    <ul class="text-xs font-bold uppercase text-gray-400 space-y-2">
-                                        <li><i class="fas fa-check text-blue-500 mr-2"></i> +300% Pipeline Velocity</li>
-                                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Zero Data Entry</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Case 2: Ops -->
-                            <div
-                                class="group relative p-8 rounded-3xl border border-gray-100 dark:border-white/10 hover:border-brand-blue/50 transition-colors">
-                                <div
-                                    class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
-                                </div>
-                                <div class="relative z-10">
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-6">
-                                        <i class="fas fa-cogs"></i>
-                                    </div>
-                                    <h3 class="text-xl font-bold mb-3">Self-Healing Ops</h3>
-                                    <p class="text-gray-500 dark:text-gray-400 mb-4">
-                                        The agent detects anomalies in server logs, analyzes the root cause, executes
-                                        restart
-                                        scripts, and notifies the team via Slack.
-                                    </p>
-                                    <ul class="text-xs font-bold uppercase text-gray-400 space-y-2">
-                                        <li><i class="fas fa-check text-purple-500 mr-2"></i> 99.99% Uptime</li>
-                                        <li><i class="fas fa-check text-purple-500 mr-2"></i> No Sleep Interruption</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Case 3: Finance -->
-                            <div
-                                class="group relative p-8 rounded-3xl border border-gray-100 dark:border-white/10 hover:border-brand-blue/50 transition-colors">
-                                <div
-                                    class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
-                                </div>
-                                <div class="relative z-10">
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center text-2xl mb-6">
-                                        <i class="fas fa-file-invoice-dollar"></i>
-                                    </div>
-                                    <h3 class="text-xl font-bold mb-3">Invoice Reconciliation</h3>
-                                    <p class="text-gray-500 dark:text-gray-400 mb-4">
-                                        The agent reads incoming PDF invoices via email, extracts data with OCR, matches
-                                        them with
-                                        POs in Odoo, and approves payment.
-                                    </p>
-                                    <ul class="text-xs font-bold uppercase text-gray-400 space-y-2">
-                                        <li><i class="fas fa-check text-green-500 mr-2"></i> 0% Human Error</li>
-                                        <li><i class="fas fa-check text-green-500 mr-2"></i> Real-time Cashflow</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    class="relative p-10 rounded-3xl border border-brand-green/30 bg-white dark:bg-[#0a0a0a] shadow-2xl">
+                    <div
+                        class="absolute -top-4 -right-4 bg-brand-green text-black text-xs font-bold px-3 py-1 rounded-full uppercase">
+                        Recommended</div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-2xl">
+                            ⚡</div>
+                        <h3 class="text-2xl font-bold text-brand-primary">The HIT Model</h3>
                     </div>
-                </section>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4"><i class="fas fa-check text-brand-green mt-1"></i> <strong
+                                class="block text-lg">Scalable Intelligence</strong>Autonomous agents handle
+                            execution,
+                            humans handle strategy.</li>
+                        <li class="flex items-start gap-4"><i class="fas fa-check text-brand-green mt-1"></i> <strong
+                                class="block text-lg">Codified Knowledge</strong>Best processes are turned
+                            into code,
+                            not forgotten PDFs.</li>
+                        <li class="flex items-start gap-4"><i class="fas fa-check text-brand-green mt-1"></i> <strong
+                                class="block text-lg">24/7 Execution</strong>While the team sleeps, the
+                            system preps
+                            work for the next day.</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </section>
+</div>
 
-            <!-- Philosophy Quote -->
-            <div class="mb-20 py-20 bg-black text-white text-center rounded-[3rem] relative overflow-hidden">
-                <div class="absolute inset-0 bg-[url('/assets/noise.png')] opacity-20"></div>
-                <div class="relative z-10 max-w-4xl mx-auto px-6">
-                    <div class="text-6xl mb-8 opacity-50">❝</div>
-                    <p class="text-3xl lg:text-5xl font-serif italic leading-tight mb-8">
-                        "We are shaping our tools and thereafter our tools shape us."
+<!-- Process Steps Visuals -->
+<div class="mb-20 rounded-[3rem] overflow-hidden">
+    <div
+        class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
+        How It Works
+    </div>
+    <section class="py-20 px-6 bg-brand-surface dark:bg-neutral-900 border-b border-gray-200 dark:border-white/10">
+        <div class="max-w-5xl mx-auto space-y-20">
+            <!-- Step 1 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="lg:text-right">
+                    <div class="text-6xl font-black opacity-20 mb-2">01</div>
+                    <h3 class="text-3xl font-bold mb-4">Protocol Design</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400">We don't automate chaos. First, we
+                        map decision
+                        flows and identify where AI can act as an autonomous agent, not just an assistant.
                     </p>
-                    <div class="text-xl font-bold uppercase tracking-widest text-brand-blue">— Marshall McLuhan</div>
+                </div>
+                <div
+                    class="bg-[#1e1e1e] rounded-2xl border border-white/10 shadow-2xl p-6 font-mono text-sm overflow-hidden text-left">
+                    <div class="text-green-400 mb-2">> Mapping workflow: "Customer Onboarding"</div>
+                    <div class="text-blue-400 mt-2">Identified Nodes: 5</div>
+                    <div class="text-gray-400 pl-4">- Email Ingestion (Automated)</div>
+                    <div class="text-gray-400 pl-4">- CRM Entry (Automated)</div>
+                    <div class="text-white pl-4">- Risk Assessment (Agentic AI)</div>
                 </div>
             </div>
-
-            <!-- Architecture / Roles (Updated) -->
-            <section class="py-32 px-6 bg-black text-white relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-b from-brand-blue/10 to-transparent pointer-events-none">
+            <!-- Step 2 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div
+                    class="bg-[#0f172a] rounded-2xl border border-white/10 shadow-2xl p-6 font-mono text-xs overflow-hidden text-left order-2 lg:order-1">
+                    <div class="flex gap-2"><span class="text-blue-400">INFO</span><span class="text-gray-300">Agent
+                            "SalesBot" active.</span></div>
+                    <div class="flex gap-2 bg-white/5 p-2 rounded mt-2"><span class="text-green-400">DECISION:</span>
+                        <span class="text-gray-300">Lead Score > 80. Scheduling call.</span>
+                    </div>
                 </div>
-                <div class="max-w-7xl mx-auto relative z-10 reveal">
-                    <div class="text-center mb-24">
-                        <h2 class="text-5xl lg:text-7xl font-black mb-6">The HIT Architecture.</h2>
-                        <p class="text-2xl text-gray-400 max-w-3xl mx-auto">
-                            A new organic structure for a new technological era.
+                <div class="order-1 lg:order-2">
+                    <div class="text-6xl font-black opacity-20 mb-2">02</div>
+                    <h3 class="text-3xl font-bold mb-4">Agent Deployment</h3>
+                    <p class="text-lg text-gray-500 dark:text-gray-400">We install proprietary Docker
+                        containers on your
+                        servers. Your agents live in your house, work on your data, and answer only to you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Use Cases (New Section) -->
+<div class="mb-20 rounded-[3rem] overflow-hidden">
+    <div
+        class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
+        Real World Applications
+    </div>
+    <section class="py-24 px-6 bg-white dark:bg-neutral-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6">From Theory to Practice.</h2>
+                <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+                    Where the HIT Model generates immediate value.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case 1: Sales -->
+                <div
+                    class="group relative p-8 rounded-3xl border border-gray-100 dark:border-white/10 hover:border-brand-blue/50 transition-colors">
+                    <div
+                        class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Autonomous Sales Rep</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-4">
+                            The agent monitors LinkedIn, enriches leads with Clearbit, qualifies the
+                            contact, and drafts
+                            personalized cold emails.
                         </p>
-                    </div>
-
-                    <div class="grid lg:grid-cols-3 gap-12 items-start">
-                        <!-- Role 1 -->
-                        <div class="text-center group">
-                            <div
-                                class="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center text-4xl mb-8 group-hover:bg-brand-blue transition-colors">
-                                🔭
-                            </div>
-                            <h3 class="text-3xl font-bold mb-4">Domain Lead</h3>
-                            <p class="text-gray-400 leading-relaxed px-6">
-                                The vertical expert. Defines the "what" and the "why".
-                            </p>
-                        </div>
-                        <!-- Role 2 -->
-                        <div class="text-center group">
-                            <div
-                                class="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center text-4xl mb-8 group-hover:bg-purple-600 transition-colors">
-                                🧠
-                            </div>
-                            <h3 class="text-3xl font-bold mb-4">AI Architect</h3>
-                            <p class="text-gray-400 leading-relaxed px-6">
-                                The bridge builder. Defines the technological "how".
-                            </p>
-                        </div>
-                        <!-- Role 3 -->
-                        <div class="text-center group">
-                            <div
-                                class="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center text-4xl mb-8 group-hover:bg-green-500 transition-colors">
-                                ⚡
-                            </div>
-                            <h3 class="text-3xl font-bold mb-4">Hybrid Operator</h3>
-                            <p class="text-gray-400 leading-relaxed px-6">
-                                The augmented executor. 1 human + 10 agents = Infinite Output.
-                            </p>
-                        </div>
+                        <ul class="text-xs font-bold uppercase text-gray-400 space-y-2">
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i> +300% Pipeline Velocity</li>
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i> Zero Data Entry</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
 
-            <!-- FAQ Section -->
-            <div class="mb-20 rounded-[3rem] overflow-hidden">
+                <!-- Case 2: Ops -->
                 <div
-                    class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
-                    FAQ
-                </div>
-                <section
-                    class="py-20 px-6 bg-brand-surface dark:bg-neutral-900 border-b border-gray-200 dark:border-white/10">
-                    <div class="max-w-3xl mx-auto">
-                        <h2 class="text-4xl font-black mb-12 text-center">Common Doubts.</h2>
-                        <div class="space-y-4">
-                            <details
-                                class="group bg-white dark:bg-neutral-800 border border-transparent dark:border-white/5 rounded-[2rem] p-6 hover:shadow-md transition-all cursor-pointer">
-                                <summary class="flex justify-between items-center font-bold text-xl list-none">
-                                    Is it secure for my data?
-                                    <span
-                                        class="bg-gray-50 dark:bg-white/10 w-8 h-8 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
-                                        <i class="fas fa-chevron-down text-sm"></i>
-                                    </span>
-                                </summary>
-                                <div class="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
-                                    Yes. Unlike SaaS solutions that "ingest" your data, the HIT Model installs on your
-                                    infrastructure (On-Premise or Private Cloud). Data never leaves your control.
-                                </div>
-                            </details>
-                            <details
-                                class="group bg-white dark:bg-neutral-800 border border-transparent dark:border-white/5 rounded-[2rem] p-6 hover:shadow-md transition-all cursor-pointer">
-                                <summary class="flex justify-between items-center font-bold text-xl list-none">
-                                    Do I need to know how to code?
-                                    <span
-                                        class="bg-gray-50 dark:bg-white/10 w-8 h-8 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
-                                        <i class="fas fa-chevron-down text-sm"></i>
-                                    </span>
-                                </summary>
-                                <div class="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
-                                    No, but you must be willing to learn how to "direct". The HIT model transforms
-                                    employees into
-                                    Agent Managers. We provide all necessary training.
-                                </div>
-                            </details>
-                            <details
-                                class="group bg-white dark:bg-neutral-800 border border-transparent dark:border-white/5 rounded-[2rem] p-6 hover:shadow-md transition-all cursor-pointer">
-                                <summary class="flex justify-between items-center font-bold text-xl list-none">
-                                    How long does it take?
-                                    <span
-                                        class="bg-gray-50 dark:bg-white/10 w-8 h-8 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
-                                        <i class="fas fa-chevron-down text-sm"></i>
-                                    </span>
-                                </summary>
-                                <div class="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
-                                    Infrastructure installation takes 2-4 weeks. Cultural transformation is immediate,
-                                    but full
-                                    optimization happens in quarterly cycles.
-                                </div>
-                            </details>
+                    class="group relative p-8 rounded-3xl border border-gray-100 dark:border-white/10 hover:border-brand-blue/50 transition-colors">
+                    <div
+                        class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-cogs"></i>
                         </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- CTA -->
-            <section class="py-32 px-6 bg-white dark:bg-neutral-950 text-center reveal">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-5xl lg:text-7xl font-black tracking-tight mb-8">
-                        The future of work is hybrid.
-                    </h2>
-                    <p class="text-2xl text-gray-500 mb-12 max-w-2xl mx-auto">
-                        Download the complete framework and start building your AI-Native organization today.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                        <a href="/en/whitepaper/"
-                            class="px-10 py-5 bg-brand-blue text-white rounded-full font-bold text-xl shadow-2xl hover:scale-105 transition-transform">
-                            Read the Whitepaper
-                        </a>
-                        <a href="https://github.com/hitmodel/hitmodel.github.io"
-                            class="px-10 py-5 bg-gray-100 dark:bg-white/10 text-black dark:text-white rounded-full font-bold text-xl hover:bg-gray-200 transition-colors">
-                            GitHub Repo
-                        </a>
+                        <h3 class="text-xl font-bold mb-3">Self-Healing Ops</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-4">
+                            The agent detects anomalies in server logs, analyzes the root cause, executes
+                            restart
+                            scripts, and notifies the team via Slack.
+                        </p>
+                        <ul class="text-xs font-bold uppercase text-gray-400 space-y-2">
+                            <li><i class="fas fa-check text-purple-500 mr-2"></i> 99.99% Uptime</li>
+                            <li><i class="fas fa-check text-purple-500 mr-2"></i> No Sleep Interruption</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+
+                <!-- Case 3: Finance -->
+                <div
+                    class="group relative p-8 rounded-3xl border border-gray-100 dark:border-white/10 hover:border-brand-blue/50 transition-colors">
+                    <div
+                        class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Invoice Reconciliation</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-4">
+                            The agent reads incoming PDF invoices via email, extracts data with OCR, matches
+                            them with
+                            POs in Odoo, and approves payment.
+                        </p>
+                        <ul class="text-xs font-bold uppercase text-gray-400 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> 0% Human Error</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Real-time Cashflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Philosophy Quote -->
+<div class="mb-20 py-20 bg-black text-white text-center rounded-[3rem] relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/assets/noise.png')] opacity-20"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+        <div class="text-6xl mb-8 opacity-50">❝</div>
+        <p class="text-3xl lg:text-5xl font-serif italic leading-tight mb-8">
+            "We are shaping our tools and thereafter our tools shape us."
+        </p>
+        <div class="text-xl font-bold uppercase tracking-widest text-brand-blue">— Marshall McLuhan</div>
+    </div>
+</div>
+
+<!-- Architecture / Roles (Updated) -->
+<section class="py-32 px-6 bg-black text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-blue/10 to-transparent pointer-events-none">
+    </div>
+    <div class="max-w-7xl mx-auto relative z-10 reveal">
+        <div class="text-center mb-24">
+            <h2 class="text-5xl lg:text-7xl font-black mb-6">The HIT Architecture.</h2>
+            <p class="text-2xl text-gray-400 max-w-3xl mx-auto">
+                A new organic structure for a new technological era.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12 items-start">
+            <!-- Role 1 -->
+            <div class="text-center group">
+                <div
+                    class="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center text-4xl mb-8 group-hover:bg-brand-blue transition-colors">
+                    🔭
+                </div>
+                <h3 class="text-3xl font-bold mb-4">Domain Lead</h3>
+                <p class="text-gray-400 leading-relaxed px-6">
+                    The vertical expert. Defines the "what" and the "why".
+                </p>
+            </div>
+            <!-- Role 2 -->
+            <div class="text-center group">
+                <div
+                    class="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center text-4xl mb-8 group-hover:bg-purple-600 transition-colors">
+                    🧠
+                </div>
+                <h3 class="text-3xl font-bold mb-4">AI Architect</h3>
+                <p class="text-gray-400 leading-relaxed px-6">
+                    The bridge builder. Defines the technological "how".
+                </p>
+            </div>
+            <!-- Role 3 -->
+            <div class="text-center group">
+                <div
+                    class="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center text-4xl mb-8 group-hover:bg-green-500 transition-colors">
+                    ⚡
+                </div>
+                <h3 class="text-3xl font-bold mb-4">Hybrid Operator</h3>
+                <p class="text-gray-400 leading-relaxed px-6">
+                    The augmented executor. 1 human + 10 agents = Infinite Output.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<div class="mb-20 rounded-[3rem] overflow-hidden">
+    <div
+        class="bg-gray-100 dark:bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-wide border-b border-gray-200 dark:border-white/10">
+        FAQ
+    </div>
+    <section class="py-20 px-6 bg-brand-surface dark:bg-neutral-900 border-b border-gray-200 dark:border-white/10">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-black mb-12 text-center">Common Doubts.</h2>
+            <div class="space-y-4">
+                <details
+                    class="group bg-white dark:bg-neutral-800 border border-transparent dark:border-white/5 rounded-[2rem] p-6 hover:shadow-md transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-xl list-none">
+                        Is it secure for my data?
+                        <span
+                            class="bg-gray-50 dark:bg-white/10 w-8 h-8 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
+                        Yes. Unlike SaaS solutions that "ingest" your data, the HIT Model installs on your
+                        infrastructure (On-Premise or Private Cloud). Data never leaves your control.
+                    </div>
+                </details>
+                <details
+                    class="group bg-white dark:bg-neutral-800 border border-transparent dark:border-white/5 rounded-[2rem] p-6 hover:shadow-md transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-xl list-none">
+                        Do I need to know how to code?
+                        <span
+                            class="bg-gray-50 dark:bg-white/10 w-8 h-8 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
+                        No, but you must be willing to learn how to "direct". The HIT model transforms
+                        employees into
+                        Agent Managers. We provide all necessary training.
+                    </div>
+                </details>
+                <details
+                    class="group bg-white dark:bg-neutral-800 border border-transparent dark:border-white/5 rounded-[2rem] p-6 hover:shadow-md transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-xl list-none">
+                        How long does it take?
+                        <span
+                            class="bg-gray-50 dark:bg-white/10 w-8 h-8 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
+                        Infrastructure installation takes 2-4 weeks. Cultural transformation is immediate,
+                        but full
+                        optimization happens in quarterly cycles.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CTA -->
+<section class="py-32 px-6 bg-white dark:bg-neutral-950 text-center reveal">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl lg:text-7xl font-black tracking-tight mb-8">
+            The future of work is hybrid.
+        </h2>
+        <p class="text-2xl text-gray-500 mb-12 max-w-2xl mx-auto">
+            Download the complete framework and start building your AI-Native organization today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="/en/whitepaper/"
+                class="px-10 py-5 bg-brand-blue text-white rounded-full font-bold text-xl shadow-2xl hover:scale-105 transition-transform">
+                Read the Whitepaper
+            </a>
+            <a href="https://github.com/hitmodel/hitmodel.github.io"
+                class="px-10 py-5 bg-gray-100 dark:bg-white/10 text-black dark:text-white rounded-full font-bold text-xl hover:bg-gray-200 transition-colors">
+                GitHub Repo
+            </a>
+        </div>
+    </div>
+</section>
