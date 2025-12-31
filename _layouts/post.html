@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<article class="bg-white dark:bg-neutral-950 transition-colors min-h-screen">
+
+  <!-- Hero Section -->
+  <div class="pt-40 pb-20 px-6 max-w-5xl mx-auto text-center reveal">
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 dark:border-white/10 mb-8">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-blue">{{ page.categories | first }}</span>
+      <span class="text-gray-300">|</span>
+      <span class="text-xs font-medium text-gray-500">{{ page.date | date: "%d %B %Y" }}</span>
+    </div>
+
+    <h1
+      class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-brand-black dark:text-white">
+      {{ page.title }}
+    </h1>
+
+    {% if page.description %}
+    <p class="text-xl md:text-3xl text-gray-500 font-serif italic max-w-3xl mx-auto leading-relaxed">
+      {{ page.description }}
+    </p>
+    {% endif %}
+  </div>
+
+  <!-- Featured Image -->
+  {% if page.image %}
+  <div class="max-w-6xl mx-auto px-6 mb-20 reveal delay-100">
+    <div class="rounded-[3rem] overflow-hidden shadow-2xl aspect-video relative group">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Content -->
+  <div class="max-w-3xl mx-auto px-6 pb-32">
+    <div
+      class="prose prose-xl dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-p:font-light prose-p:leading-loose prose-blockquote:border-l-4 prose-blockquote:border-brand-blue prose-blockquote:italic prose-img:rounded-3xl max-w-none text-brand-black/80 dark:text-gray-200">
+      {{ content }}
+    </div>
+
+    <!-- Author Bio / Footer -->
+    <div class="mt-20 pt-10 border-t border-gray-100 dark:border-white/10 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        {% if page.author %}
+        <div class="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-xl">
+          {{ page.author | slice: 0 }}
+        </div>
+        <div>
+          <div class="text-sm font-bold uppercase tracking-widest mb-1">{{ page.author }}</div>
+          <div class="text-xs text-gray-500">HIT Model Team</div>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="flex gap-4">
+        <!-- Share buttons could go here -->
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="mt-20">
+      {% include related-posts.html current=page %}
+    </div>
+
+  </div>
+
+  {% include popup-down.html %}
+
+</article>

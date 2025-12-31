@@ -1,0 +1,57 @@
+---
+layout: default
+title: Blog - HIT Model
+lang: it
+locale: it_IT
+description: "Riflessioni su team ibridi, AI-native organization e il futuro del lavoro cognitivo."
+---
+
+<section class="py-24 px-6 bg-white dark:bg-neutral-950 min-h-screen">
+    <div class="max-w-4xl mx-auto text-center reveal">
+        <span class="text-brand-blue font-bold tracking-widest uppercase text-sm mb-4 block">Il Nostro Pensiero</span>
+        <h1 class="text-5xl lg:text-8xl font-black tracking-tighter mb-8 leading-[0.9]">
+            Insights <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-purple-600">& Vision.</span>
+        </h1>
+        <p class="text-xl md:text-2xl font-serif italic text-gray-500 mb-20 max-w-2xl mx-auto">
+            "Non stiamo solo costruendo un modello. Stiamo documentando la transizione verso una nuova era del lavoro."
+        </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-20 reveal delay-200">
+        {% for post in site.posts %}
+        {% if post.lang == 'it' %}
+        <article
+            class="group flex flex-col md:flex-row gap-8 items-start border-b border-gray-100 dark:border-white/10 pb-16 last:border-0 hover:-translate-y-2 transition-transform duration-500">
+            {% if post.image %}
+            <a href="{{ post.url | relative_url }}"
+                class="w-full md:w-5/12 block overflow-hidden rounded-[2rem] shadow-lg">
+                <img src="{{ post.image }}" alt="{{ post.title }}"
+                    class="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+            </a>
+            {% endif %}
+            <div class="flex-1 pt-4">
+                <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest mb-4 text-gray-400">
+                    <span class="text-brand-blue">{{ post.date | date: "%d %B %Y" }}</span>
+                    <span>•</span>
+                    <span>{{ post.categories | join: ', ' }}</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">
+                    <a href="{{ post.url | relative_url }}" class="group-hover:text-brand-blue transition-colors">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed mb-8 text-lg line-clamp-3">
+                    {{ post.description }}
+                </p>
+                <a href="{{ post.url | relative_url }}"
+                    class="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest border-b-2 border-transparent group-hover:border-brand-blue transition-all">
+                    Leggi Articolo <i
+                        class="fas fa-arrow-right -rotate-45 group-hover:rotate-0 transition-transform"></i>
+                </a>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>

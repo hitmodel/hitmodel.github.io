@@ -1,0 +1,105 @@
+<!-- Footer -->
+<footer class="bg-white dark:bg-neutral-950 border-t border-gray-200 dark:border-white/10 py-20 px-6 transition-colors">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-12">
+
+        <div class="max-w-sm">
+            <a href="{{ '/' | relative_url }}{% if page.lang == 'it' %}it/{% else %}en/{% endif %}"
+                class="flex items-center gap-3 mb-6 hover:opacity-80 transition-opacity">
+                <img src="/assets/images/logo/hitmodel-logo_192x192.png" alt="{{ site.title }}" class="h-14 w-auto">
+                <span class="text-2xl font-black tracking-tighter text-neutral-900 dark:text-white">hitmodel</span>
+            </a>
+            <p class="text-gray-500 dark:text-gray-400 mb-6">
+                {% if page.lang == 'it' %}
+                Trasforma Salesforce in un Operatore AI.
+                {% else %}
+                Turn Salesforce Into an AI Operator.
+                {% endif %}
+            </p>
+            <div class="flex gap-4">
+                <!-- Social Links -->
+                <a href="https://github.com/hitmodel"
+                    class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors"><i
+                        class="fab fa-github"></i></a>
+
+                <!-- LinkedIn -->
+                <a href="{% if page.lang == 'it' %}https://linkedin.com/company/hitmodel-it{% else %}https://linkedin.com/company/hitmodel{% endif %}"
+                    class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- YouTube -->
+                <a href="{% if page.lang == 'it' %}https://youtube.com/@hitmodel-it{% else %}https://youtube.com/@hitmodel{% endif %}"
+                    class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-12 lg:gap-20 w-full lg:w-auto">
+            <div>
+                <h4 class="font-bold mb-4">{% if page.lang == 'it' %}Esplora{% else %}Explore{% endif %}</h4>
+                <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/manifesto/{% else %}/en/manifesto/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            Manifesto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/whitepaper/{% else %}/en/whitepaper/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            Whitepaper
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/monetization/{% else %}/en/monetization/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Business Model{% else %}Business Model{% endif %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">{% if page.lang == 'it' %}Contatti{% else %}Contact{% endif %}</h4>
+                <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/pricing/{% else %}/en/pricing/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Richiedi Demo{% else %}Request Demo{% endif %}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div
+        class="max-w-7xl mx-auto mt-20 pt-8 border-t border-gray-200 dark:border-white/10 text-center text-gray-400 text-sm">
+        <p class="mb-2">
+            {% if page.lang == 'it' %}
+            hitmodel è un prodotto indipendente e non è affiliato, approvato o associato a Salesforce, Inc.
+            Salesforce è un marchio registrato di Salesforce, Inc.
+            {% else %}
+            hitmodel is an independent product and is not affiliated with, endorsed by, or associated with
+            Salesforce, Inc. Salesforce is a trademark of Salesforce, Inc.
+            {% endif %}
+        </p>
+        &copy; 2025 hitmodel Team. {% if page.lang == 'it' %}Tutti i diritti riservati.{% else %}All rights
+        reserved.{% endif %}
+        <br class="md:hidden">
+        <span class="hidden md:inline mx-2">•</span>
+        <a href="{% if page.lang == 'it' %}/it/privacy/{% else %}/en/privacy/{% endif %}"
+            class="hover:text-black dark:hover:text-white transition-colors">{% if page.lang == 'it' %}Privacy{% else
+            %}Privacy{% endif %}</a>
+        <span class="mx-2">•</span>
+        <a href="{% if page.lang == 'it' %}/it/terms/{% else %}/en/terms/{% endif %}"
+            class="hover:text-black dark:hover:text-white transition-colors">{% if page.lang == 'it' %}Termini{% else
+            %}Terms{% endif %}</a>
+    </div>
+</footer>
